@@ -8,12 +8,24 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 img{
     width: auto;
     height: auto;
-    max-width: 80vw;
-    max-height: 80vh;
+    max-width: 80vmin;
+    max-height: 80vmin;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+img:hover{
+    max-width: 90vmin;
+    max-height: 90vmin;
+    animation-name: initial;
 }
 /*IE FIX*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -21,4 +33,14 @@ img{
         width: 100%;
         height: 100%;
     }
+}
+@keyframes wiggle {
+    0%    {transform: rotate(0deg);}
+    70%   {transform: rotate(0deg);}
+    87.5% {transform: rotate(18deg);}
+    90%   {transform: rotate(-12deg);}
+    92.5% {transform: rotate(7deg);}
+    95%   {transform: rotate(-3deg);}
+    97.5% {transform: rotate(1deg);}
+    100%  {transform: rotate(0deg);}
 }
