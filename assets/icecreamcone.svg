@@ -1,4 +1,4 @@
-<svg width="500" height="1100" viewbox="0 0 500 1100" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="1100" viewbox="0 0 500 1100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <defs>
         <g id="choco">
@@ -162,11 +162,11 @@
         </g>
     </defs>
 
-    <use x="390" y="-120" href="#choco" transform="rotate(23, 0, 0)"/>
-    <use y="100" href="#topping"/>
-    <use y="100" href="#ice_detail"/>
-    <use x="85" y="0" href="#cherry"/>
-    <use y="390" href="#cone"/>
-    <use y="100" href="#topping_cherry"/>
-    <use y="390" href="#hash"/>
+    <use x="390" y="-120" href="#choco" xlink:href="#choco" transform="rotate(23, 0, 0)"/>
+    <use y="100" href="#topping" xlink:href="#topping"/>
+    <use y="100" href="#ice_detail" xlink:href="#ice_detail"/>
+    <use x="85" y="0" href="#cherry" xlink:href="#cherry"/>
+    <use y="390" href="#cone" xlink:href="#cone"/>
+    <use y="100" href="#topping_cherry" xlink:href="#topping_cherry"/>
+    <use y="390" href="#hash" xlink:href="#hash"/>
 </svg>
