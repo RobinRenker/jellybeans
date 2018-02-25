@@ -1,0 +1,17 @@
+<svg width="500" height="1100" viewbox="0 0 500 1100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <defs>
+        <g id="glass">
+            <ellipse cx="250" cy="85" rx="245" ry="80" fill="red" stroke-width="10" stroke="#B2C7D0"/>
+            <ellipse cx="250" cy="650" rx="200" ry="80" fill="red" stroke-width="10" stroke="#B2C7D0"/>
+
+            <line x1="5" y1="85" x2="50" y2="650" stroke="#B2C7D0" stroke-width="10" stroke-linecap="round"/>
+            <line x1="495" y1="85" x2="450" y2="650" stroke="#B2C7D0" stroke-width="10" stroke-linecap="round"/>
+        </g>
+    </defs>
+
+    <rect width="500" height="1100" fill="yellow"></rect>
+
+    <use href="#glass" xlink:href="#glass"/>
+
+</svg>

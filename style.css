@@ -22,6 +22,56 @@ img{
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
+.static{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.sun{
+    position: absolute;
+    background-image: url("assets/sun.svg");
+    background-size: contain;
+    background-position:center;
+    width: 50vmin;
+    height: 50vmin;
+    top:-15vmin;
+    right: -15vmin;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.wavew{
+    width: 160%;
+    height: 30%;
+    left: -10%;
+    bottom: 0;
+    position: absolute;
+}
+.wavew:nth-child(3){
+    bottom: -5%;
+    left: -30%;
+}
+.wavew:nth-child(4){
+    bottom: -10%;
+    left: -50%;
+}
+.wavew:nth-child(3) .wave{
+    animation-delay: -2s;
+}
+.wavew:nth-child(4) .wave{
+    animation-delay: -4s;
+}
+.wave{
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/wave.svg");
+    animation-name: wave;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
 /*IE FIX*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     body img{
@@ -38,4 +88,16 @@ img{
     20%   {transform: rotate(1deg);}
     22.5% {transform: rotate(0deg);}
     100%  {transform: rotate(0deg);}
+}
+@keyframes wave {
+    0% {top: 5%;}
+    25% {transform: rotate(3deg);}
+    50% {top: -5%;}
+    75% {transform: rotate(-3deg);}
+    100% {top:5%;}
+}
+@keyframes pulse {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.1)}
+    100% {transform: scale(1)}
 }
